@@ -5,7 +5,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>LIBRARY TEAM</title>
+    <title>KPU Kota Batu</title>
     <!-- plugins:css -->
     <link rel="stylesheet" href="{{asset('vendors/iconfonts/mdi/css/materialdesignicons.min.css')}}">
     <link rel="stylesheet" href="{{asset('vendors/css/vendor.bundle.base.css')}}">
@@ -30,8 +30,9 @@
         <!-- partial:partials/_navbar.html -->
         <nav class="navbar default-layout col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
             <div class="text-center navbar-brand-wrapper d-flex align-items-top justify-content-center">
-                <a class="navbar-brand brand-logo" href="index.html" style="color: #2d2d2d">
-                    LIBRARY TEAM
+            <img src="{{asset('images/logo.png')}}">
+                <a class="navbar-brand brand-logo" href="{{route('home')}}" style="color: #2d2d2d">
+                    KPU Kota Batu
                 </a>
                 <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button"
                     data-toggle="offcanvas">
@@ -95,7 +96,7 @@
                     <div class="container-fluid clearfix">
                         <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">Copyright ©
                             {{date('Y')}}
-                            <a href="#" target="_blank">Kelompok 5 - Library Team</a>. All rights reserved.</span>
+                            <a href="#" target="_blank">KPU Kota Batu</a>. All rights reserved.</span>
                     </div>
                 </footer>
                 <!-- partial -->

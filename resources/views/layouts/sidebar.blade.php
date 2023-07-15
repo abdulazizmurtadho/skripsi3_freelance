@@ -1,5 +1,5 @@
 <ul class="nav">
-    <li class="nav-item nav-profile">
+    <!-- <li class="nav-item nav-profile">
         <div class="nav-link">
             <div class="user-wrapper">
                 <div class="profile-image">
@@ -20,7 +20,7 @@
                 </div>
             </div>
         </div>
-    </li>
+    </li> -->
     <li class="nav-item {{ setActive(['/', 'home']) }}">
         <a class="nav-link" href="{{url('/home')}}">
             <i class="menu-icon mdi mdi-television"></i>
@@ -60,6 +60,18 @@
         <a class="nav-link" href="{{route('alternatif.index')}}">
             <i class="menu-icon mdi mdi-backup-restore"></i>
             <span class="menu-title">Data Calon Anggota</span>
+        </a>
+    </li>
+    <li class="nav-item {{ setActive(['perhitungan*']) }}">
+        <a class="nav-link" href="#">
+            <i class="menu-icon mdi mdi-backup-restore"></i>
+            <span class="menu-title">Data Penilaian</span>
+        </a>
+    </li>
+    <li class="nav-item {{ setActive(['perankingan*']) }}">
+        <a class="nav-link" href="#">
+            <i class="menu-icon mdi mdi-backup-restore"></i>
+            <span class="menu-title">Hasil Ranking</span>
         </a>
     </li>
     @endif

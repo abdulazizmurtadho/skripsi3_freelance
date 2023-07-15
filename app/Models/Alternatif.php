@@ -15,8 +15,8 @@ class Alternatif extends Model
     	'nama', 'alamat', 'nomer'
     ];
 
-    public function perhitungan(): HasMany
+    public function perhitungan()
     {
-        return $this->hasMany(Perhitungan::class);
+        return $this->belongsTo(Perhitungan::class, 'perhitungan_id', 'id');
     }
 }

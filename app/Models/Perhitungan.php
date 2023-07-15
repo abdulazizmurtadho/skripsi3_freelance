@@ -16,8 +16,13 @@ class Perhitungan extends Model
     	'alternatifs_id', 'kriterias_id', 'hasil'
     ];
 
-    public function alternatif(): BelongsTo
+    public function alternatif()
     {
-        return $this->hasMany(Perhitungan::class);
+        return $this->hasMany(Alternatif::class, 'alternatif_id', 'id');
+    }
+
+    public function kriteria()
+    {
+        return $this->hasMany(Kriteria::class, 'kriteria_id', 'id');
     }
 }
