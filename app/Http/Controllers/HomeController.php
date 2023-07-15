@@ -28,6 +28,6 @@ class HomeController extends Controller
     {
         $users = User::get();
         $kriteria = Kriteria::get();
-
+        return view ('home');
     }
 }
