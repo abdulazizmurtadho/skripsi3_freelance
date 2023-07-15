@@ -18,7 +18,8 @@ class PerhitunganController extends Controller
     public function index()
     {
         
-        return view('user.perhitungan.index');
+        $perhitungan = Perhitungan::get();
+        return view('perhitungan.index', compact('perhitungan'));
     }
 
     //     $kriteria = [
